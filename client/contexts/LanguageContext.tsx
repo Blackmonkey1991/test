@@ -2,6 +2,14 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'de' | 'fr' | 'es' | 'it';
 
+export const languageInfo = {
+  en: { name: "English", flag: "🇬🇧" },
+  de: { name: "Deutsch", flag: "🇩🇪" },
+  fr: { name: "Français", flag: "🇫🇷" },
+  es: { name: "Español", flag: "🇪🇸" },
+  it: { name: "Italiano", flag: "🇮🇹" }
+};
+
 interface LanguageData {
   [key: string]: { [key: string]: string };
 }
